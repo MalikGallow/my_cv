@@ -42,6 +42,10 @@ nav a{
 
 }
 
+nav:hover{
+ color: gray;
+}
+
 /* header styling  */
 header{
     background-image: url(../images/banner.jpg);
