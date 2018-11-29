@@ -174,7 +174,7 @@ padding-left: 30px;
     background-image: url(../images/quote.jpg);
     background-attachment: fixed;
     text-align: center;
-    /* filter: brightness(70%); */
+    
     
 }
 
@@ -247,11 +247,13 @@ footer a:hover{
   @media only screen 
   and (min-device-width: 320px) 
   and (max-device-width: 480px){
+      /* nav-bar styling */
       nav{
           font-size: 15px;
           word-spacing: 5px;
       }
 
+      /* header styling */
       header{
           background-attachment: scroll;
           font-size: 20px;
@@ -275,7 +277,8 @@ footer a:hover{
       .about{
           font-size: 20px;
       }
-
+     
+      /* education/work div styling */
       article{
           display: grid;
           grid-template-columns: 1fr;
@@ -296,11 +299,13 @@ footer a:hover{
 
       }
 
+      /* skills styling */
       #skills li{
         display: inline;
           
       }
 
+      /* quote styling */
       .quote{
           height: 200px;
           background-attachment: scroll;
@@ -311,6 +316,51 @@ footer a:hover{
       .quote p{
           padding-top: 60px;
         font-size: 20px;
+      }
+  }
+
+  /* media queries for mobile */
+  @media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (-webkit-min-device-pixel-ratio: 1){
+    /* nav bar styling   */
+    nav{
+          font-size: 20px;
+      }
+
+      /* header styling */
+      header{
+          background-attachment: scroll;
+      }
+     
+      /* education/work styling */
+      article{
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+      }
+
+      #tertiary, #work{
+          padding-left: 40px;
+
+      }
+
+      .tertiary img, .secondary img, .work img, .ref img{
+          width: 300px;
+      }
+
+      .tertiary, .secondary, .work, .ref{
+        width: 300px;
+        
+      }
+
+     /* quote styling */
+      .quote{
+          height: 300px;
+      }
+
+      .quote p{
+        padding-top: 100px;
       }
   }
   
