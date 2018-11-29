@@ -1,0 +1,263 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css?family=Dosis');
+@import url('https://fonts.googleapis.com/css?family=Dosis|Lobster');
+@import url('https://fonts.googleapis.com/css?family=Dosis|Lobster|Pacifico');
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC|Dosis|Lobster|Pacifico');
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC|Dosis|Lobster|Pacifico|Questrial');
+
+body{
+    background-color:#3a405a;
+    margin-left: 0%;
+    margin-top: 0%;
+    color: grey;
+    margin-right: 0%;
+    font-family: 'Dosis', sans-serif;
+    
+}
+
+/* scroll behaviour */
+*{
+    scroll-behavior: smooth;
+}
+
+/* nav bar styling */
+nav{
+    word-spacing: 20px;
+    background-color:rgba(0, 0, 0, 0.829);
+    position: absolute;
+    width: 100%;
+    font-size: 20px;
+    
+}
+
+nav li{
+    list-style: none;
+    display: inline;
+}
+
+nav a{
+    text-decoration: none;
+    color: white;
+
+}
+
+/* header styling  */
+header{
+    background-image: url(../images/banner.jpg);
+    height: 500px;
+    width: 100%;
+    background-position: center;
+    text-align: center;
+    color: white;
+    background-attachment: fixed;
+}
+
+header h1{
+    padding-top: 200px;
+    font-family: 'Pacifico', cursive;
+    font-size:40px;
+    
+}
+
+header h3{
+    letter-spacing: 5px;
+    font-family: 'Questrial', sans-serif;
+}
+
+header hr{
+    color: white;
+    width: 370px;
+}
+
+/* about me styling */
+
+section{
+    padding-top: 20px;
+    box-shadow: -2px 2px 10px  black;
+    margin: 40px 40px 40px 40px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.829);;
+    color: #9e9e9e;
+    font-size: 20px;
+}
+
+section p{
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 40px;
+}
+
+section i{
+    font-size: 30px;
+    text-align: center;
+    padding-bottom: 20px;
+    
+}
+
+/* education styling */
+
+article{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-left: 70px;
+    color: #3a405a;
+}
+
+.tertiary, .secondary {
+    width: 500px;
+    background-color:white;
+
+}
+
+.tertiary h2,p, .secondary h2,p{
+padding-left: 30px;
+}
+
+.tertiary img, .secondary img{
+    width: 500px;
+    height: 300px;
+    filter: brightness(75%);
+}
+
+
+
+.tertiary img:hover, .secondary img:hover{
+    transform: scale(1.1);
+    transition: 0.9s ease-in-out;
+    opacity: 4;
+    
+    
+    
+}
+
+/* skills styling */
+
+#skills li{
+list-style: none;
+display: inline-block;
+}
+
+/* work and ref styling */
+.work, .ref {
+    width: 500px;
+    background-color:white;
+
+}
+
+.work h2,p, .ref h2,p{
+padding-left: 30px;
+}
+
+.work img, .ref img{
+    width: 500px;
+    height: 300px;
+    filter: brightness(75%);
+    border-bottom: dotted 1px;
+}
+
+.work img:hover, .ref img:hover{
+    transform: scale(1.1);
+    transition: 0.9s ease-in-out;
+    opacity: 4;
+}
+
+/* quote styling */
+
+.quote{
+    width: 100%;
+    height: 400px;
+    background-image: url(../images/quote.jpg);
+    background-attachment: fixed;
+    text-align: center;
+    /* filter: brightness(70%); */
+    
+}
+
+.quote p{
+    font-size: 35px;
+    padding-top: 200px;
+    font-style: italic;
+    color: rgba(255,255,255,.6);
+    filter: brightness(100%);
+    padding-bottom: 0%;
+}
+
+
+/* contact styling */
+footer{
+    background-color: rgba(0, 0, 0, 0.829);
+    color: grey;
+    text-align: center;
+    font-size: 20px;
+    padding-bottom: 30px;
+    margin-top: 0%;
+}
+
+footer a{
+    padding-left: 20px;
+    font-size: 40px;
+    color: grey;
+}
+ 
+footer a:hover{
+    color: white;
+}
+
+ #fone{
+    
+        animation: shake 0.7s cubic-bezier(0.455, 0.030, 0.515, 0.955) infinite both;
+    
+} 
+
+ 
+
+ @keyframes shake {
+    0%,
+    100% {
+      transform: rotate(0deg);
+      transform-origin: 50% 50%;
+    }
+    10% {
+      transform: rotate(8deg);
+    }
+    20%,
+    40%,
+    60% {
+      transform: rotate(-10deg);
+    }
+    30%,
+    50%,
+    70% {
+      transform: rotate(10deg);
+    }
+    80% {
+      transform: rotate(-8deg);
+    }
+    90% {
+      transform: rotate(8deg);
+    }
+  }
+
+  /* media queries */
+  @media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px){
+      nav{
+          font-size: 10px;
+          word-spacing: 5px;
+      }
+
+      header{
+          background-attachment: scroll;
+          font-size: 20px;
+      }
+
+      header h1{
+          font-size: 25px;
+      }
+
+      header h3{
+          font-size: 20px;
+      }
+  }
+  
