@@ -8,6 +8,7 @@ Setting up my workspace
     -Pushed Changes
 
 Technologies used
+     
      -HTML
      -CSS
      -Javascript
