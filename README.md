@@ -1,4 +1,4 @@
-# my_online_cv_2.0
+# my_cv_2
 my online cv 2
 
 Setting up my workspace
