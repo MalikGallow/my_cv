@@ -14,5 +14,5 @@ Technologies used
      -Javascript
      -Gitbash
 
-Live Link :
+Live Link : https://malikgallow.github.io/my_online_cv_2.0/
  
