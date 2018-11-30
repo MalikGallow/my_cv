@@ -42,8 +42,8 @@ nav a{
 
 }
 
-nav:hover{
- color: gray;
+nav a:hover{
+ color: grey;
 }
 
 /* header styling  */
@@ -245,8 +245,8 @@ footer a:hover{
 
   /* media queries */
   @media only screen 
-  and (min-device-width: 320px) 
-  and (max-device-width: 480px){
+  and (min-device-width: 0px) 
+  and (max-device-width: 768px){
       /* nav-bar styling */
       nav{
           font-size: 15px;
@@ -321,7 +321,7 @@ footer a:hover{
 
   /* media queries for mobile */
   @media only screen 
-  and (min-device-width: 768px) 
+  and (min-device-width: 769px) 
   and (max-device-width: 1024px) 
   and (-webkit-min-device-pixel-ratio: 1){
     /* nav bar styling   */
