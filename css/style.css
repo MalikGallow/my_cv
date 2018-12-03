@@ -28,6 +28,7 @@ nav{
     position: fixed;
     width: 100%;
     font-size: 20px;
+    z-index: 2;
     
 }
 
@@ -246,7 +247,7 @@ footer a:hover{
   /* media queries */
   @media only screen 
   and (min-device-width: 0px) 
-  and (max-device-width: 768px){
+  and (max-device-width: 767px){
       /* nav-bar styling */
       nav{
           font-size: 15px;
@@ -321,7 +322,7 @@ footer a:hover{
 
   /* media queries for mobile */
   @media only screen 
-  and (min-device-width: 769px) 
+  and (min-device-width: 768px) 
   and (max-device-width: 1024px) 
   and (-webkit-min-device-pixel-ratio: 1){
     /* nav bar styling   */
@@ -346,11 +347,11 @@ footer a:hover{
       }
 
       .tertiary img, .secondary img, .work img, .ref img{
-          width: 300px;
+          width: 100%;
       }
 
       .tertiary, .secondary, .work, .ref{
-        width: 300px;
+        width: 100%;
         
       }
 

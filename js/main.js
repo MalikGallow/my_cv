@@ -1,9 +1,2 @@
-var myName = document.getElementById('intro')
-
-
-
-    if (onload) {
-        (myName)
-    }
-
+alert("Welcome, user");
 
