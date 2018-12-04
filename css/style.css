@@ -107,6 +107,12 @@ section i{
     
 }
 
+section i:hover{
+    color: white;
+    font-size: 40px;
+
+}
+
 /* education styling */
 
 article{
