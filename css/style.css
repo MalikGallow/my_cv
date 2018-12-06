@@ -6,7 +6,7 @@
 @import url('https://fonts.googleapis.com/css?family=Amatic+SC|Dosis|Lobster|Pacifico|Questrial');
 
 body{
-    background-color:#3a405a;
+    background-color:#e0e0e2;
     margin-left: 0%;
     margin-top: 0%;
     color: grey;
@@ -44,7 +44,7 @@ nav a{
 }
 
 nav a:hover{
- color: grey;
+   color: grey;
 }
 
 /* profile pic styling */
@@ -54,9 +54,73 @@ nav a:hover{
     padding-top: 70px;
 }
 
-/* header styling  */
+
+
+#intro{
+    -webkit-animation: text-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+        animation: text-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+    
+}
+
+@-webkit-keyframes text-in {
+    0% {
+      -webkit-filter: blur(12px);
+              filter: blur(12px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-filter: blur(0px);
+              filter: blur(0px);
+      opacity: 1;
+    }
+  }
+  @keyframes text-in {
+    0% {
+      -webkit-filter: blur(12px);
+              filter: blur(12px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-filter: blur(0px);
+              filter: blur(0px);
+      opacity: 1;
+    }
+  }
+  
+  #menu{
+      position: absolute;
+      display: none;
+
+      
+  }
+
+  #men{
+      border: 1px solid rgba(0, 0, 0, 0.829);
+      background-color:rgba(0, 0, 0, 0.829);
+      color: aliceblue;
+      float: right;
+      list-style: none;
+      font-size: 15px;
+}
+
+  #men a{
+      color: azure;
+      text-decoration: none;
+      list-style: none;
+ }
+
+  #menu a{
+      color: white;
+      text-decoration: none;
+ }
+
+  #menu li{
+    border: 1px solid wheat;
+ }
+
+ /* header styling  */
 header{
-    background-image: url(../images/banner.jpg);
+    background-image: url(../images/mountains-3.jpeg);
     height: 550px;
     width: 100%;
     background-position: center;
@@ -100,14 +164,14 @@ section p{
     padding-bottom: 40px;
 }
 
-section i{
+section a{
     font-size: 30px;
     text-align: center;
     padding-bottom: 20px;
     
 }
 
-section i:hover{
+section a:hover{
     color: white;
     font-size: 40px;
 
@@ -120,12 +184,12 @@ article{
     grid-template-columns: 1fr 1fr;
     padding-left: 70px;
     color: #3a405a;
+    
 }
 
 .tertiary, .secondary {
     width: 500px;
     background-color:white;
-
 }
 
 .tertiary h2,p, .secondary h2,p{
@@ -144,8 +208,6 @@ padding-left: 30px;
     transform: scale(1.1);
     transition: 0.9s ease-in-out;
     opacity: 4;
-    
-    
     
 }
 
@@ -219,7 +281,7 @@ footer i{
     
 }
  
-footer a:hover{
+footer i:hover{
     color: white;
 }
 
@@ -228,8 +290,6 @@ footer a:hover{
         animation: shake 0.7s cubic-bezier(0.455, 0.030, 0.515, 0.955) infinite both;
     
 } 
-
- 
 
  @keyframes shake {
     0%,
@@ -258,6 +318,7 @@ footer a:hover{
     }
   }
 
+  
   /* media queries */
   @media only screen 
   and (min-device-width: 0px) 
@@ -266,6 +327,12 @@ footer a:hover{
       nav{
           font-size: 15px;
           word-spacing: 5px;
+          display: none;
+      }
+
+      .mobile{
+          display: inline;
+          /* position: fixed; */
       }
 
       /* profile pic styling */
@@ -317,7 +384,6 @@ footer a:hover{
 
       .tertiary, .secondary, .work, .ref{
           width: 280px;
-          /* padding-right: 20px; */
           padding-bottom: 20px;
 
       }
@@ -350,6 +416,11 @@ footer a:hover{
     /* nav bar styling   */
     nav{
           font-size: 20px;
+      }
+
+      /* mobile nav styling */
+      .mobile{
+          display: none;
       }
 
       /* header styling */
@@ -399,13 +470,19 @@ footer a:hover{
         font-size: 20px;
     }
 
+    .mobile{
+      display: none;
+    }
+
+    
+
     /* header styling */
     header{
         background-attachment: fixed;
     }
 
 
-  }
+ }
 
   
   
