@@ -10,12 +10,12 @@ function changeImg(){
   
 }
 
+function changeImage(){
+    document.getElementById("profile").src = "images/IMG_20181027_232202.jpg"
+}
+
 function changeIcon(){
     document.getElementById("html").innerHTML = "HTML";
 }
 
-var me = document.getElementById("menu").innerHTML;
 
-function changeMenu(){
-    document.getElementById("men").innerHTML = me;
-}
