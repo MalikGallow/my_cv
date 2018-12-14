@@ -31,27 +31,23 @@
         <div class="mobile">
             
             <div class="menu">
-                    <i class="fas fa-bars"></i>
-                    <ul>
-                      <a href="#about">About</a>
+                <i class="fas fa-bars"></i>
+            
+                <!-- <div class="menu-content"> -->
+                    <a href="#about">About</a>
                       <br>
-                      <a href="#tertiary">Education</a>
+                    <a href="#tertiary">Education</a>
                       <br>
-                      <a href="#skills">Skills</a>
+                    <a href="#skills">Skills</a>
                       <br>
-                      <a href="#work">Work-Experience</a>
+                    <a href="#work">Work-Experience</a>
                       <br>
-                      <a href="#con">Contact</a>
-                      <br>
-                      <a href="#head"><i class="fas fa-arrow-up"></i></a> 
-                    </ul>
+                    <a href="#con">Contact</a>
+                    <!-- </div> -->
                  </div>
-                   
-                
-           
-
         </div>
-         <img src="images/IMG_20181027_232202.jpg" alt="" id="profile" onmouseover="changeImg(this);">       
+         
+        <img src="images/IMG_20181027_232202.jpg" alt="" class="profile" onmouseover="changeImg(this);">       
         <h1 id="intro">Abdul Malik Gallow</h1>
          <hr>
         <h3>Junior Web Developer</h3>
@@ -97,10 +93,10 @@
             
       <h2>Skills</h2>
     <br>
-        <li><a><i class="fab fa-html5"></i></a><p>HTML</p></li>
-        <li><a><i class="fab fa-css3-alt"></i></a><p>CSS</p></li>
-        <li><a><i class="fab fa-sass"></i></a><p>SASS</p></li>
-        <li><a><i class="fab fa-js-square"></i></a><p>Javascript</p></li>
+        <li><a><i class="fab fa-html5"></i></a><p>HTML</p><p class="counter">90%</p></li>
+        <li><a><i class="fab fa-css3-alt"></i></a><p>CSS</p><p class="counter">85%</p></li>
+        <li><a><i class="fab fa-sass"></i></a><p>SASS</p><p class="counter">50%</p></li>
+        <li><a><i class="fab fa-js-square"></i></a><p>JavaScript</p><p class="counter">45%</p></li>
     </section>
 
     
@@ -140,9 +136,9 @@
          <p><a class="fone"><i class="fas fa-mobile-alt" id="fone"></i></a>065 857 1074</p>
     
             
-            <a href="https://www.facebook.com"><i class="fab fa-facebook"></i></a>
+            <!-- <a href="https://www.facebook.com"><i class="fab fa-facebook"></i></a> -->
             <a href="https://github.com/MalikGallow"><i class="fab fa-github"></i></a>
-            <a><i class="fas fa-envelope" onclick="myFunction()"></i></a><p id="email"></p>
+            <a href="https://mail.google.com/mail/u/0/#inbox?compose=DmwnWsLPvknZCFtVMHTjpDldGPSwxvkjGcVRbxvTPbRslSJrljpfCVKGctXRdvmtlwdWpdghBPBB"><i class="fas fa-envelope"></i></a>
             <a href="https://www.linkedin.co.za"><i class="fab fa-linkedin"></i></a>
             
     </footer>
@@ -150,7 +146,13 @@
     
 
     <!-- scripts -->
+    <script
+    src="https://code.jquery.com/jquery-3.3.1.js"
+    integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    crossorigin="anonymous">
+ </script>
     <script src="js/main.js"></script>
+   
     
 </body>
 </html>

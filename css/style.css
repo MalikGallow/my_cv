@@ -48,11 +48,15 @@ nav a:hover{
 }
 
 /* profile pic styling */
-#profile{
+.profile{
     width: 200px;
     height: 200px;
     padding-top: 70px;
+    box-shadow: -2px 2px 10px  black;
+    
 }
+
+
 
 
 
@@ -89,10 +93,12 @@ nav a:hover{
   
  /* header styling  */
 header{
-    background-image: url(../images/mountains-3.jpeg);
+    background-image: url(../images/pexels-laptop.jpeg);
     height: 550px;
     width: 100%;
     background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     text-align: center;
     color: white;
     background-attachment: fixed;
@@ -216,9 +222,10 @@ padding-left: 30px;
 .quote{
     width: 100%;
     height: 400px;
-    background-image: url(../images/quote.jpg);
+    background-image: url(../images/pexels-photo-quote.jpeg);
     background-attachment: fixed;
     text-align: center;
+    
     
     
 }
@@ -235,7 +242,7 @@ padding-left: 30px;
 
 /* contact styling */
 footer{
-    background-color: rgba(0, 0, 0, 0.829);
+    background-color:#e0e0e2;
     color: grey;
     text-align: center;
     font-size: 20px;
@@ -254,11 +261,13 @@ footer i:hover{
     color: white;
 }
 
- #fone{
-    
-        animation: shake 0.7s cubic-bezier(0.455, 0.030, 0.515, 0.955) infinite both;
-    
+ #fone:hover{
+    animation: shake 0.7s cubic-bezier(0.455, 0.030, 0.515, 0.955) infinite both;
 } 
+
+#fone {
+    padding-right: 10px;
+}
 
  @keyframes shake {
     0%,
@@ -299,46 +308,26 @@ footer i:hover{
           display: none;
       }
 
-      .menu{
-        float: left;
-    }
-
-      .menu i{
-          font-size: 30px;
-          padding-bottom: 0%;
-          
+      /* mobile nav bar */
+      .menu {
+        position: relative;
+        display: inline-block;
       }
 
-      .menu ul, .menu:active ul { 
+      .menu-content {
         display: none;
         position: absolute;
-        background:#444;
-        border: 5px solid #444;
-        float: right;
-        z-index: 0;
-    }
+      }
 
-      .menu a{
-        color: white;
-        text-decoration: none;
-        text-align: center;
-        width: 100%;
-        padding: 10px 0;
-        margin: 0;
-        
-    }
-    
-    .menu:hover{
-        border: 1px solid black;
-        
-    }
-    
-   .menu:hover ul{
+      .menu a .menu:active a{
+        display: none;
+        position: absolute; 
+      }
+
+      .menu:active .menu-content {
         display: block;
-        padding-top: 0%;
-    
-    }
-
+      }
+      
       /* profile pic styling */
       #profile{
           width: 100px;
@@ -410,7 +399,8 @@ footer i:hover{
           padding-top: 60px;
         font-size: 20px;
       }
-  }
+}
+  
 
   /* media queries for tablet*/
   @media only screen 
