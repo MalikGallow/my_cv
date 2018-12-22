@@ -1,21 +1,10 @@
-
-
-function myFunction(){
-    document.getElementById("email").innerHTML
-    = "gallowabdul@gmail.com";
-}
-
-function changeImg(){
-  var img =  document.getElementById("profile").src = "images/IMG-20180828-WA0022.jpg";
-  
-}
-
-function changeImage(){
-    document.getElementById("profile").src = "images/IMG_20181027_232202.jpg"
-}
-
-function changeIcon(){
-    document.getElementById("html").innerHTML = "HTML";
-};
+$(document).scroll(function() {
+  var y = $(this).scrollTop();
+  if (y > 500) {
+    $('.head').fadeIn();
+  } else {
+    $('.head').fadeOut();
+  }
+});
 
 
